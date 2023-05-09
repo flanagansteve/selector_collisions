@@ -30,7 +30,7 @@ def get_selector_collision(signature, max_function_name_len):
   target_selector = get_selector(signature)
   print('target: ' + target_selector)
 
-  candidate_function_length = 1
+  candidate_function_length = 0
 
   returned_function = { 'selector' : 'NOT_FOUND', 'function_signature' : '' }
   while returned_function['selector'] != target_selector and candidate_function_length < max_function_name_len:
